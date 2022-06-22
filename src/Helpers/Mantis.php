@@ -83,8 +83,6 @@ class Mantis
                 )]
             );
 
-            $data                  = json_decode($response->getBody()->getContents());
-
             return (object)[
                 "status"   => 'success',
                 "data"     => json_decode($response->getBody()->getContents()),
