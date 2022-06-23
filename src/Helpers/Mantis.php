@@ -38,7 +38,7 @@ class Mantis
      * @access public
      * @return Object
      */
-    public function createAnIssueMinimal(Exception $e, array $data):object{
+    public function createAnIssueMinimal(array $data):object{
 
         try {
             
@@ -102,7 +102,7 @@ class Mantis
      * @access public
      * @return Object
      */
-    public function createAnIssue(Exception $e, array $data):object{
+    public function createAnIssue(array $data):object{
 
         try {
             self::checkEnvVariables();

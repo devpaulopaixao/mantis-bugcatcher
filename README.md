@@ -59,7 +59,7 @@ Adicione ao seu arquivo '.env' as variáveis de ambiente que possibilitarão a c
 1. [Create an issue minimal](https://documenter.getpostman.com/view/29959/mantis-bug-tracker-rest-api/7Lt6zkP#028dda86-2165-b74a-490b-7e0487eeb853):
 
    ```php
-     MantisBugcatcher::createAnIssueMinimal($exception,[
+     MantisBugcatcher::createAnIssueMinimal([
         'summary'   => '',
         'description' => '',
         'category' => [
@@ -85,7 +85,7 @@ Adicione ao seu arquivo '.env' as variáveis de ambiente que possibilitarão a c
 2. [Create an issue](https://documenter.getpostman.com/view/29959/mantis-bug-tracker-rest-api/7Lt6zkP#a3f345e6-c4b6-1361-3b61-839f9205a954):
 
    ```php
-     MantisBugcatcher::createAnIssue($exception,[
+     MantisBugcatcher::createAnIssue([
         'summary'   => '',
         'description' => '',
         'additional_information' => '',
