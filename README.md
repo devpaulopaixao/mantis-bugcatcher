@@ -36,7 +36,7 @@ Em seguida, execute o comando de instalação do gerenciador de pacotes:
 
     composer install
 
-Depois, adicione a seguinte linha ao seu 'config/app.php':
+Depois, adicione a seguinte linha ao seu 'config/app.php' em 'providers':
 
     Devpaulopaixao\LaravelTools\LaravelToolsServiceProvider::class,
 
