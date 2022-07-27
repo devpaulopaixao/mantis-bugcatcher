@@ -38,7 +38,7 @@ Em seguida, execute o comando de instalação do gerenciador de pacotes:
 
 Depois, adicione a seguinte linha ao seu 'config/app.php' em 'providers':
 
-    Devpaulopaixao\LaravelTools\LaravelToolsServiceProvider::class,
+    Devpaulopaixao\MantisBugcatcher\MantisServiceProvider::class,
 
 Com isso, o pacote está pronto para ser utilizado.
 
