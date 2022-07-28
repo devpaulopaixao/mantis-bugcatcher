@@ -35,7 +35,19 @@ class Mantis
     
     /**
      * Create an issue minimal
+     *
      * @access public
+     * @param array $data [
+     * 
+     * Array contendo os parâmetros necessários para executar a funcionalidade.
+     *
+     * @param string $summary
+     * @param string $description
+     * @param array $category[
+     *  @param string $name
+     * ]
+     * 
+     * ]
      * @return Object
      */
     public function createAnIssueMinimal(array $data):object{
@@ -98,8 +110,53 @@ class Mantis
     }
 
     /**
-     * Create an issue
+     * Create an issue minimal
+     *
      * @access public
+     * @param array $data [
+     * 
+     * Array contendo os parâmetros necessários para registrar a issue completa.
+     *
+     * @param string $summary
+     * @param string $description
+     * @param string $additional_information (optional)
+     * @param array $project[
+     *  @param integer $id
+     *  @param string $name
+     * ]
+     * @param array|integer $category[
+     *  @param integer $id
+     *  @param string $name
+     * ]
+     * @param array $handler[
+     *  @param string $name
+     * ]
+     * @param array|integer $view_state[
+     *  @param integer $id
+     *  @param string $name
+     * ]
+     * @param array $priority[
+     *  @param string $name
+     * ]
+     * @param array $severity[
+     *  @param string $name
+     * ]
+     * @param array $reproducibility[
+     *  @param string $name
+     * ]
+     * @param bool $sticky (optional) false
+     * @param array $custom_fields (optional)[
+     *  @param array $field[
+     *      @param integer $id
+     *      @param string $name
+     *  ]
+     *  @param string $value
+     * ]
+     * @param array $tags (optional)[
+     *  @param string $name
+     * ]
+     * 
+     * ]
      * @return Object
      */
     public function createAnIssue(array $data):object{

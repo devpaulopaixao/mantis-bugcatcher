@@ -59,6 +59,23 @@ Adicione ao seu arquivo '.env' as variáveis de ambiente que possibilitarão a c
 1. [Create an issue minimal](https://documenter.getpostman.com/view/29959/mantis-bug-tracker-rest-api/7Lt6zkP#028dda86-2165-b74a-490b-7e0487eeb853):
 
    ```php
+   /**
+     * Create an issue minimal
+     *
+     * @access public
+     * @param array $data [
+     * 
+     * Array contendo os parâmetros necessários para executar a funcionalidade.
+     *
+     * @param string $summary
+     * @param string $description
+     * @param array $category[
+     *  @param string $name
+     * ]
+     * 
+     * ]
+     * @return Object
+     */
      MantisBugcatcher::createAnIssueMinimal([
         'summary'   => '',
         'description' => '',
@@ -85,6 +102,56 @@ Adicione ao seu arquivo '.env' as variáveis de ambiente que possibilitarão a c
 2. [Create an issue](https://documenter.getpostman.com/view/29959/mantis-bug-tracker-rest-api/7Lt6zkP#a3f345e6-c4b6-1361-3b61-839f9205a954):
 
    ```php
+   /**
+     * Create an issue minimal
+     *
+     * @access public
+     * @param array $data [
+     * 
+     * Array contendo os parâmetros necessários para registrar a issue completa.
+     *
+     * @param string $summary
+     * @param string $description
+     * @param string $additional_information (optional)
+     * @param array $project[
+     *  @param integer $id
+     *  @param string $name
+     * ]
+     * @param array|integer $category[
+     *  @param integer $id
+     *  @param string $name
+     * ]
+     * @param array $handler[
+     *  @param string $name
+     * ]
+     * @param array|integer $view_state[
+     *  @param integer $id
+     *  @param string $name
+     * ]
+     * @param array $priority[
+     *  @param string $name
+     * ]
+     * @param array $severity[
+     *  @param string $name
+     * ]
+     * @param array $reproducibility[
+     *  @param string $name
+     * ]
+     * @param bool $sticky (optional) false
+     * @param array $custom_fields (optional)[
+     *  @param array $field[
+     *      @param integer $id
+     *      @param string $name
+     *  ]
+     *  @param string $value
+     * ]
+     * @param array $tags (optional)[
+     *  @param string $name
+     * ]
+     * 
+     * ]
+     * @return Object
+     */
      MantisBugcatcher::createAnIssue([
         'summary'   => '',
         'description' => '',
