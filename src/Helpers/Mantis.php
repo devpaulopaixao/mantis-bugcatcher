@@ -103,7 +103,7 @@ class Mantis
         } catch (\Throwable $e) {
             return (object)[
                 "status"   => 'error',
-                "code"     => $response->getStatusCode() != null ? $response->getStatusCode() : 000,
+                "code"     => isset($response) ? $response->getStatusCode() : 000,
                 "message"  => $e->getMessage(),
             ];
         }
@@ -253,7 +253,7 @@ class Mantis
         } catch (\Throwable $e) {
             return (object)[
                 "status"   => 'error',
-                "code"     => $response->getStatusCode() != null ? $response->getStatusCode() : 000,
+                "code"     => isset($resposne) ? $response->getStatusCode() : 000,
                 "message"  => $e->getMessage(),
             ];
         }
