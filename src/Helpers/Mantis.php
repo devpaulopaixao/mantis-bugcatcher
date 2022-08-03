@@ -2,6 +2,7 @@
 
 namespace Devpaulopaixao\MantisBugcatcher\Helpers;
 
+use \GuzzleHttp\Client;
 class Mantis
 {
     public function __construct()
